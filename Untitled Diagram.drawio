@@ -1,9 +1,105 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1">
-  <diagram name="Page-1" id="rJjxH9l3r4iKEUrz9h0S">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1" pages="4">
+  <diagram name="architecture" id="rJjxH9l3r4iKEUrz9h0S">
+    <mxGraphModel dx="1900" dy="583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="UAcA6Q91Pi1CXa0FNyhf-1" value="What is Architecture ? : design / workflow ==&amp;gt; where to start and end the stuff." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="70" y="220" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UAcA6Q91Pi1CXa0FNyhf-2" value="Framework ?&amp;nbsp; implementation of architecture&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="350" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UAcA6Q91Pi1CXa0FNyhf-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UAcA6Q91Pi1CXa0FNyhf-3" target="UAcA6Q91Pi1CXa0FNyhf-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UAcA6Q91Pi1CXa0FNyhf-3" value="What is RabbitMQ?&amp;nbsp;&lt;div&gt;RabbitMQ architecture ?&amp;nbsp;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="70" y="470" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UAcA6Q91Pi1CXa0FNyhf-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UAcA6Q91Pi1CXa0FNyhf-4" target="UAcA6Q91Pi1CXa0FNyhf-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UAcA6Q91Pi1CXa0FNyhf-4" value="RabbitMQ : its an open source message broker software. / message oriented middleware" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="435" y="470" width="235" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UAcA6Q91Pi1CXa0FNyhf-6" value="A message in the context of message broker like (rabbitMQ, kafka, ActiveMQ) is a discrete unit of data or info exchanged between applications or components in a distributed system." style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="364.38" y="600" width="376.25" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UAcA6Q91Pi1CXa0FNyhf-8" value="Messaging Queue : a messaging queue is a communication protocol that allows you to perform complete asynchronous exchange between the applications, systems , services." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-60" y="600" width="340" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UAcA6Q91Pi1CXa0FNyhf-9" value="Architecture :&amp;nbsp;&lt;div&gt;1. Producer : the application component that sends (publishes) messages to RabbitMQ.&lt;/div&gt;&lt;div&gt;2. consumer : the application component that receives and processes messages from RabbitMQ&lt;/div&gt;&lt;div&gt;3. Broker : RabbitMQ itself acts as a message broker , responsible for accepting, routing and storing the messages.&lt;/div&gt;&lt;div&gt;4. Queues and exchange&amp;nbsp; :&amp;nbsp;&lt;/div&gt;&lt;div&gt;Queue : a buffer that holds messages until they are processed by consumers.&lt;/div&gt;&lt;div&gt;exchange:&amp;nbsp; routes messages from the producers to queue using specific route.&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="750" width="480" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="UAcA6Q91Pi1CXa0FNyhf-10" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="1080" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="j8_JaOQrRzmPMZEEwhw3" name="Page-2">
+    <mxGraphModel dx="1050" dy="583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tVuj1gzufYO9Nx3ZrR6p-1" value="to form the cluster 1st we have to stop the services (slave and slave2)&lt;div&gt;to fire reset command.==&amp;gt; reset your RabbitMQ instance.&lt;/div&gt;&lt;div&gt;all slaves under the cluster via join_cluster command&lt;/div&gt;&lt;div&gt;then we will up our slaves&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="580" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="6fM7a9fNGL8s7gdc5sU-" name="Page-3">
+    <mxGraphModel dx="1050" dy="583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iVAzikupkRQtMa-XKPxc-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iVAzikupkRQtMa-XKPxc-1" target="iVAzikupkRQtMa-XKPxc-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iVAzikupkRQtMa-XKPxc-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iVAzikupkRQtMa-XKPxc-1" target="iVAzikupkRQtMa-XKPxc-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iVAzikupkRQtMa-XKPxc-1" value="master" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iVAzikupkRQtMa-XKPxc-2" value="slave" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iVAzikupkRQtMa-XKPxc-4" value="slave2" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iVAzikupkRQtMa-XKPxc-6" value="when we want to perform the any operations in our Rabbitmq env.&lt;div&gt;&amp;nbsp;1.we have to set the policies.&lt;/div&gt;&lt;div&gt;2. can we go &amp;amp; create the queues ?&amp;nbsp;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="430" width="470" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="iVAzikupkRQtMa-XKPxc-7" value="queue :&amp;nbsp; its a buffer that stores messages until they are consumed.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;DS : FIFO : messaging purpose.&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="720" width="470" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="iVAzikupkRQtMa-XKPxc-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iVAzikupkRQtMa-XKPxc-8" target="iVAzikupkRQtMa-XKPxc-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iVAzikupkRQtMa-XKPxc-8" value="AMQ ==&amp;gt; RabbitMQ ===&amp;gt; queue ==&amp;gt; any type of queue for the same." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="920" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iVAzikupkRQtMa-XKPxc-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iVAzikupkRQtMa-XKPxc-9" target="iVAzikupkRQtMa-XKPxc-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iVAzikupkRQtMa-XKPxc-9" value="1. classic(we should not use it)&lt;div&gt;2. quorum(preferred one )&amp;nbsp;&lt;/div&gt;&lt;div&gt;3. stream(3.9)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="97.5" y="1070" width="395" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iVAzikupkRQtMa-XKPxc-11" value="classic : (default queue)&lt;br&gt;1. classic queues are the default queues&amp;nbsp;&lt;div&gt;2. they store the info in memory (transient) or on the Disk(if we marked as durable)&lt;/div&gt;&lt;div&gt;3. its going to follow FIFO --&amp;gt; messages are delivered&amp;nbsp;&lt;/div&gt;&lt;div&gt;4. performance degrades under heavy load because of Disk I/O&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;h3 data-end=&quot;255&quot; data-start=&quot;197&quot;&gt;&lt;strong data-end=&quot;255&quot; data-start=&quot;203&quot;&gt;Causes of Disk I/O Bottlenecks in Classic Queues&lt;/strong&gt;&lt;/h3&gt;&lt;br/&gt;&lt;ol data-end=&quot;1726&quot; data-start=&quot;256&quot;&gt;&lt;br/&gt;&lt;li data-end=&quot;493&quot; data-start=&quot;256&quot;&gt;&lt;br/&gt;&lt;p data-end=&quot;288&quot; data-start=&quot;259&quot;&gt;&lt;strong data-end=&quot;286&quot; data-start=&quot;259&quot;&gt;Persistence of Messages&lt;/strong&gt;&lt;/p&gt;&lt;br/&gt;&lt;ul data-end=&quot;493&quot; data-start=&quot;292&quot;&gt;&lt;br/&gt;&lt;li data-end=&quot;391&quot; data-start=&quot;292&quot;&gt;Classic queues often persist messages to disk to guarantee durability and prevent message loss.&lt;/li&gt;&lt;br/&gt;&lt;li data-end=&quot;493&quot; data-start=&quot;395&quot;&gt;High message rates or large message sizes increase disk I/O, leading to slow reads and writes.&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&lt;br/&gt;&lt;/li&gt;&lt;br/&gt;&lt;li data-end=&quot;691&quot; data-start=&quot;495&quot;&gt;&lt;br/&gt;&lt;p data-end=&quot;524&quot; data-start=&quot;498&quot;&gt;&lt;strong data-end=&quot;522&quot; data-start=&quot;498&quot;&gt;Slow Disk Throughput&lt;/strong&gt;&lt;/p&gt;&lt;br/&gt;&lt;ul data-end=&quot;691&quot; data-start=&quot;528&quot;&gt;&lt;br/&gt;&lt;li data-end=&quot;691&quot; data-start=&quot;528&quot;&gt;If the underlying storage (e.g., HDD or slow SSD) cannot keep up with the queue&#39;s write/read demands, messages get backlogged, causing performance degradation.&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&lt;br/&gt;&lt;/li&gt;&lt;br/&gt;&lt;li data-end=&quot;942&quot; data-start=&quot;693&quot;&gt;&lt;br/&gt;&lt;p data-end=&quot;750&quot; data-start=&quot;696&quot;&gt;&lt;strong data-end=&quot;748&quot; data-start=&quot;696&quot;&gt;High Volume of Acknowledgments and Confirmations&lt;/strong&gt;&lt;/p&gt;&lt;br/&gt;&lt;ul data-end=&quot;942&quot; data-start=&quot;754&quot;&gt;&lt;br/&gt;&lt;li data-end=&quot;865&quot; data-start=&quot;754&quot;&gt;For every message written or read, the queue must log the operation to disk for consistency and durability.&lt;/li&gt;&lt;br/&gt;&lt;li data-end=&quot;942&quot; data-start=&quot;869&quot;&gt;Frequent fsync (force write to disk) operations slow down the system.&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&lt;br/&gt;&lt;/li&gt;&lt;br/&gt;&lt;li data-end=&quot;1185&quot; data-start=&quot;944&quot;&gt;&lt;br/&gt;&lt;p data-end=&quot;982&quot; data-start=&quot;947&quot;&gt;&lt;strong data-end=&quot;980&quot; data-start=&quot;947&quot;&gt;Message Batching and Ordering&lt;/strong&gt;&lt;/p&gt;&lt;br/&gt;&lt;ul data-end=&quot;1185&quot; data-start=&quot;986&quot;&gt;&lt;br/&gt;&lt;li data-end=&quot;1112&quot; data-start=&quot;986&quot;&gt;Some queues require strict message ordering, which means messages are flushed to disk sequentially instead of in parallel.&lt;/li&gt;&lt;br/&gt;&lt;li data-end=&quot;1185&quot; data-start=&quot;1116&quot;&gt;This reduces the benefits of batching and increases disk latency.&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&lt;br/&gt;&lt;/li&gt;&lt;br/&gt;&lt;li data-end=&quot;1394&quot; data-start=&quot;1187&quot;&gt;&lt;br/&gt;&lt;p data-end=&quot;1237&quot; data-start=&quot;1190&quot;&gt;&lt;strong data-end=&quot;1235&quot; data-start=&quot;1190&quot;&gt;Insufficient Buffering or Memory Pressure&lt;/strong&gt;&lt;/p&gt;&lt;br/&gt;&lt;ul data-end=&quot;1394&quot; data-start=&quot;1241&quot;&gt;&lt;br/&gt;&lt;li data-end=&quot;1394&quot; data-start=&quot;1241&quot;&gt;If the queue doesn&#39;t have enough memory to store incoming messages before writing to disk, it will continuously offload data to disk, increasing I/O.&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&lt;br/&gt;&lt;/li&gt;&lt;br/&gt;&lt;li data-end=&quot;1537&quot; data-start=&quot;1396&quot;&gt;&lt;br/&gt;&lt;p data-end=&quot;1423&quot; data-start=&quot;1399&quot;&gt;&lt;strong data-end=&quot;1421&quot; data-start=&quot;1399&quot;&gt;Disk Fragmentation&lt;/strong&gt;&lt;/p&gt;&lt;br/&gt;&lt;ul data-end=&quot;1537&quot; data-start=&quot;1427&quot;&gt;&lt;br/&gt;&lt;li data-end=&quot;1537&quot; data-start=&quot;1427&quot;&gt;Over time, the message log files may become fragmented, increasing seek time and reducing disk throughput.&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&lt;br/&gt;&lt;/li&gt;&lt;br/&gt;&lt;li data-end=&quot;1726&quot; data-start=&quot;1539&quot;&gt;&lt;br/&gt;&lt;p data-end=&quot;1572&quot; data-start=&quot;1542&quot;&gt;&lt;strong data-end=&quot;1570&quot; data-start=&quot;1542&quot;&gt;Message Retention Policy&lt;/strong&gt;&lt;/p&gt;&lt;br/&gt;&lt;ul data-end=&quot;1726&quot; data-start=&quot;1576&quot;&gt;&lt;br/&gt;&lt;li data-end=&quot;1726&quot; data-start=&quot;1576&quot;&gt;Retaining messages for longer periods increases the size of the disk data files, which increases the cost of index searches and message retrieval.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="116.25" y="1230" width="1113.75" height="1540" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="eaG7tnYQqPzvr3pBaduF" name="quorum Queue">
+    <mxGraphModel dx="1050" dy="583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uTVjADWYcI4EQm4Kb5Tj-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="60" width="650" height="290" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
