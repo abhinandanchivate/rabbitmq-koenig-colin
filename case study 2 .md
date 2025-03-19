@@ -117,3 +117,26 @@ An e-commerce company handles **different types of orders**:
 
 ---
 
+Enhancements:
+✔️ Retry Logic
+Use a Dead Letter Exchange (DLX) to store failed messages.
+Define a TTL (Time-to-Live) for messages before they are moved to the DLQ.
+Implement a retry mechanism:
+If a message fails, it will be sent to the DLQ.
+After a delay, the message will be re-queued for retry.
+After max_retries, the message will be logged or discarded.
+✔️ Monitoring
+Implement message count monitoring using RabbitMQ Management API.
+Log processing status.
+Provide insights into:
+Number of processed orders.
+Number of failed orders.
+Retry counts.
+📌 Architecture Update
+➡️ Add a retry queue with TTL for retry attempts.
+➡️ Add a dead-letter queue to handle permanent failures.
+➡️ Use headers to track retry count.
+➡️ Implement monitoring using RabbitMQ HTTP API.
+
+
+
