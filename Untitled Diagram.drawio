@@ -104,7 +104,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="yHwrHGjqEEXPeU_tm2wT" name="exchange">
-    <mxGraphModel dx="1900" dy="583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1593" dy="506" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -197,6 +197,15 @@
         </mxCell>
         <mxCell id="BtwRDpeeJGedjRrlBWg4-31" value="Fanout : the publisher sends a message to the fanout exchange.&lt;div&gt;the fanout exchange delivers the message to all bound queues.&lt;/div&gt;&lt;div&gt;each consumer receives a copy of the message.&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;** routing key will be ignored in case of fanout exchange&lt;/b&gt;.&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="2210" width="380" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="BtwRDpeeJGedjRrlBWg4-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BtwRDpeeJGedjRrlBWg4-32" target="BtwRDpeeJGedjRrlBWg4-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BtwRDpeeJGedjRrlBWg4-32" value="Topic : it allows messages to be routed based on matching patterns defined by the routing key.&lt;div&gt;work:&amp;nbsp;&lt;/div&gt;&lt;div&gt;1. producers send messages to the topic exchange with a routing key.&lt;/div&gt;&lt;div&gt;2. consumers bind a queue to the exchange with a binding key.&lt;/div&gt;&lt;div&gt;3. Rabbitmq routes the messages to the queue where the routing key matches the binding key.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="2520" width="480" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="BtwRDpeeJGedjRrlBWg4-33" value="app.error&lt;div&gt;db.info&lt;/div&gt;&lt;div&gt;web.warn&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="2825" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
